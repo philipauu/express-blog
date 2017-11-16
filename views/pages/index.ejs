@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<% include ../partials/head %>
+
+  <body>
+    <h1>Introduction to Express</h1>
+
+    <% include ../partials/nav %>
+
+      <p> This is a paragraph of text. Yay! </p>
+
+      <ul>
+        <% for(var counter = 0; counter < data.length; counter++){ %>
+
+          <li>
+            <%= data[counter].email %>
+          </li>
+
+          <% } %>
+
+      </ul>
+
+      <% include ../partials/footer %>
+  </body>
